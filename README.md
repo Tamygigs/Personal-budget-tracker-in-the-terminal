@@ -43,6 +43,15 @@ pip install -e ".[dev]"
 tally --help
 ```
 
+### Every time you open a new Terminal window
+
+Run these two lines first, then `tally` works:
+
+```bash
+cd Personal-budget-tracker-in-the-terminal
+source .venv/bin/activate
+```
+
 Try it on made-up data first (it won't touch your real database):
 
 ```bash
