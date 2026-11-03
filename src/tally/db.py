@@ -101,9 +101,12 @@ class Store:
         categorize: Callable[[str], str | None],
     ) -> tuple[int, int]:
         """Insert new transactions. Returns (added, duplicates_skipped)."""
+        transactions, fingerprints = list(transactions), list(fingerprints)
+        if len(transactions) != len(fingerprints):
+            raise ValueError("each transaction needs exactly one fingerprint")
         added = duplicates = 0
         with self.conn:
-            for t, fp in zip(transactions, fingerprints, strict=True):
+            for t, fp in zip(transactions, fingerprints):
                 cur = self.conn.execute(
                     "INSERT OR IGNORE INTO transactions "
                     "(date, description, amount, category, source, fingerprint) "

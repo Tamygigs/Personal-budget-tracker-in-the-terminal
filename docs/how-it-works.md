@@ -74,5 +74,5 @@ see a Python traceback for a mistake like a bad month.
 
 `tests/` has one file per module, plus `test_cli.py`, which runs the real
 command end to end against a temporary database and the sample statement.
-GitHub Actions runs everything on Linux and macOS for Python 3.10–3.13 on
+GitHub Actions runs everything on Linux and macOS for Python 3.9–3.13 on
 every push.

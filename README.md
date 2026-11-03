@@ -31,7 +31,8 @@ Spending by category
 
 ## Install
 
-You need Python 3.10 or newer. On a Mac: `brew install python` if you don't have it.
+You need Python 3.9 or newer (the one that comes with macOS works).
+If `pip install` complains about `setup.py`, upgrade pip first: `python -m pip install --upgrade pip`.
 
 ```bash
 git clone https://github.com/Tamygigs/Personal-budget-tracker-in-the-terminal.git

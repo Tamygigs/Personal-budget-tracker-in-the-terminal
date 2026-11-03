@@ -7,7 +7,7 @@ name = "tally-budget"
 version = "0.1.0"
 description = "A personal budget tracker for the terminal: import your bank CSVs, categorise with rules, see where your money goes."
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.9"
 license = "MIT"
 authors = [{ name = "Tamygigs" }]
 keywords = ["budget", "finance", "cli", "terminal", "csv"]
